@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion Card</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <main>
+        <section id="imagem">
+            <img src="images/illustration-woman-online-mobile.svg" alt="" id="imgmobile">
+            <img src="images/illustration-woman-online-desktop.svg" alt="" id="imgdesktop">
+            
+        </section>
+        
+        <img src="images/illustration-box-desktop.svg" alt="" id="dado">
+
+        <section id="faq">
+            <h1>FAQ</h1>
+            <div onclick="pg1()">
+                <p class="perg">
+                    How many team members can I invite?
+                    <img src="images/icon-arrow-down.svg" alt="" class="icon">
+                </p>
+                <p id="p1">
+                    You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+                </p>
+            </div>
+
+            <div onclick="pg2()">
+                <p class="perg">
+                    What is the maximum file upload size?
+                    <img src="images/icon-arrow-down.svg" alt="" class="icon">
+                </p>
+                <p id="p2">
+                    No more than 2GB. All files in your account must fit your allotted storage space.
+                </p>
+            </div>
+
+            <div onclick="pg3()">
+                <p class="perg">
+                    How do I reset my password?
+                    <img src="images/icon-arrow-down.svg" alt="" class="icon">
+                </p>
+                <p id="p3">
+                    Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+                </p>
+                
+            </div>
+
+            <div onclick="pg4()">
+                <p class="perg">
+                    Can I cancel my subscription?
+                    <img src="images/icon-arrow-down.svg" alt="" class="icon">
+                </p>
+                <p id="p4">
+                    Yes! Send us a message and well process your request no questions asked.
+                </p>
+            </div>
+
+            <div onclick="pg5()">
+                <p class="perg">
+                    Do you provide additional support?
+                    <img src="images/icon-arrow-down.svg" alt="" class="icon">
+                </p>
+                <p id="p5">
+                    Chat and email support is available 24/7 Phone lines are open during normal business hours.
+                </p>
+            </div>
+            
+        </section>
+    </main>
+    <script src="interation/javascript.js"></script>
+</body>
+</html>

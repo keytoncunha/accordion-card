@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --font: 'Kumbh Sans', Helvetica, sans-serif;
+    --grad1: hsl(273, 75%, 66%);
+    --grad2: hsl(240, 73%, 65%);
+    --cor1: hsl(238, 29%, 16%);
+    --cor2: hsl(14, 88%, 65%);
+    --cor3: hsl(237, 12%, 33%);
+    --cor4: hsl(240, 6%, 50%);
+    --cor5: hsl(240, 5%, 91%);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, var(--grad1), var(--grad2));
+    color: var(--cor3);
+    font-family: var(--font);
+    font-size: 14px;
+}
+main {
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    margin: 200px auto;
+    border-radius: 20px;
+}
+section#imagem {
+    height: 150px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.721) url('../images/bg-pattern-mobile.svg') no-repeat top center scroll;
+    background-size: contain;
+    margin: auto;
+} 
+#imgmobile {
+    position: relative;
+    transform: translateY(-59%);
+}
+#imgdesktop, #dado {
+    display: none;
+}
+
+section#faq {
+    line-height: 1.8em;
+    padding: 0px 30px 40px 30px;
+}
+h1{
+    text-align: center;
+    color: var(--cor1);
+}
+div {
+    
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--cor5);
+}
+p.perg {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.perg:active {
+    color: var(--cor2);
+}
+
+    .icon{
+        position: absolute;
+        right: 0px;
+        top: 50%;
+    }
+p {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    html, body {
+        background-image: linear-gradient(to bottom, var(--grad1), var(--grad2));
+        /* padding: 10px; */
+    }
+
+    main {
+        position: relative;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    section#imagem {
+        position: relative;
+        width: 45%;
+        height: 100%;
+        float: left;
+        background: rgb(255, 255, 255) url('../images/bg-pattern-desktop.svg') right bottom no-repeat scroll;
+        background-size: cover;
+        border-radius: 20px 0px 0px 20px;
+        overflow: hidden;
+    }
+    #imgmobile {
+        display: none;
+    }
+    #imgdesktop {
+        position: absolute;
+        top: 50%;
+        left: -15%;
+        transform: translateY(-50%);
+        display: block;
+        width: 115%;
+        /* background-color: blanchedalmond; */
+    }
+    #dado {
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: block;
+    }
+
+    section#faq {
+        width: 50%;
+        float: right;
+    }
+    h1 {
+        text-align: left;
+        padding: 40px 0px 20px 0px;
+    }
+    p.perg {
+        padding-right: 15px;
+    }
+    
+}
